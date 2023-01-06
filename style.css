@@ -189,6 +189,7 @@ textarea {
   font-size: 20px;
 }
 .texto-resultado {
+  max-width: 460px;
   border: none;
   border-radius: 32px;
   outline: none;
