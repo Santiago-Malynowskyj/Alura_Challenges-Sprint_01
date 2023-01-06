@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="imagenes/Logo_Alura.png">
+
+</head>
+
+<body>
+  <header>
+    <div class="cajaHeader">
+      <h1 class="logo"><img src="imagenes/Logo_Alura.png" /></h1>
+      <h2 class="titulo">Encriptador de texto</h2>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+
+
+
+    <section class="cajaTexto">
+
+      <textarea placeholder="Ingrese el texto aqui" class="textInput" required></textarea>
+
+      <div class="cajaBotones">
+
+        <p class="advertencia">&#33 Sólo letras minúsculas y sin acentos</p>
+        <button onclick="encriptarTexto()" class="btn_encriptar">Encriptar!</button>
+        <button onclick="desencriptarTexto()" class="btn_desencriptar">
+          Desencriptar!
+        </button>
+        <button onclick="copiarTexto()" class="btn_copiar_movil esconder_div">Copiar</button>
+        <button onclick="limpiarTextInput()" class="btn_limpiar esconder_div">Limpiar</button>
+        
+
+      </div>
+
+    </section>
+
+    <aside class="cajaLateral">
+
+      <div class="mostrarDefault">
+
+        <img class="imagenLateral" src="/Imagenes/Muñeco.png"
+          alt="Imágen de un muñeco con una lupa que se muestra si no hay texto para encriptar/desencriptar" />
+        <h2 class="subtituloLateral">Ningún mensaje fue encontrado</h2>
+        <p class="parrafoLateral">Ingresa el texto que desees encriptar o desencriptar</p>
+
+      </div>
+
+      <div class="mostrarOculto esconder_div">
+
+        <div class="contenedorOculto">
+
+          <p class="texto-resultado"></p>
+          <button onclick="copiarTexto()" class="btn_copiar">Copiar</button>
+
+        </div>
+
+      </div>
+
+
+    </aside>
+
+    
+
+  </main>
+
+  <footer>&copy Santiago Malynowskyj</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
