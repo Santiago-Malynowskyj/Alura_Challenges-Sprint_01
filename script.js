@@ -79,8 +79,8 @@ function copiarTexto() {
   const clipboard = document.querySelector(".texto-resultado").innerHTML;
   navigator.clipboard.writeText(clipboard);
   let mensajeDeCopia = document.querySelector(".texto-resultado");
-  mensajeDeCopia.innerHTML =
-    "Su texto ha sido copiado &#9989 </br> Aguarde un instante";
+  mensajeDeCopia.innerHTML = `Su texto ha sido copiado &#9989
+      Aguarde un instante`;
   setTimeout(cambioLateralInverso, 2000);
 }
 var mediaqueryList = window.matchMedia("(max-width: 850px)");
